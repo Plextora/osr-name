@@ -1,5 +1,5 @@
-from osrparse import parse_replay_file
-from osrparse import dump_replay_file
+import osrparse
+import os
 
 import tkinter as tk
 from tkinter import filedialog
@@ -18,20 +18,18 @@ print('''
 ''')
 
 def editName():
-    try:
         osrEditNamePath = filedialog.askopenfilename()
 
-        replay = parse_replay_file(osrEditNamePath)
+        replay = osrparse.parse_replay_file(osrEditNamePath)
 
         print("Insert player name for .osr file (example: RyuK)")
         print("")
 
-        replay.player_name = input("")
-        dump_replay_file(replay, osrEditNamePath)
+        replay.player_name = input(">> ")
+
+        replay.dump(osrEditNamePath)
 
         print("")
         print("Replay has been saved. Open the replay file you picked and it will be updated with the player's name!")
-    except:
-        print("osr!name has run into a fatal error! Is your .osr corrupted? Did you select a .osr file?")
 
 editName()
