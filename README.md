@@ -15,4 +15,4 @@ Now, notice that it's changed from "Played by haga1115" to "Played by RyuK". osr
 
 # Cool, how do I download this?
 
-It's not that hard. But you'll need Python 3 installed and the `osrparse` library installed (you can download `osrparse` with this command: `pip install git+https://github.com/bemxio/osu-replay-parser@dumping`) All you have to do is go to the Releases page, and then click ["osrname.py"](https://github.com/Plextora/osr-name/releases/download/v1.1/osrname.py) to download! To run the program, cd into the directory the file was downloaded in, and run `python3 osrname.py`.
+It's not that hard. But you'll need Python 3 installed and the `osrparse` library installed (you can download `osrparse` with this command: `pip install git+https://github.com/kszlim/osu-replay-parser`) All you have to do is go to the Releases page, and then click ["osrname.py"](https://github.com/Plextora/osr-name/releases/download/v1.2/osrname.pyy) to download! To run the program, cd into the directory the file was downloaded in, and run `python3 osrname.py`.
